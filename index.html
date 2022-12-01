@@ -6,16 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Icons Link -->
+    <!-- css reset -->
+    <link rel="stylesheet" href="css/reset.css">
 
+    <!-- Icons Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet Link -->
     <link rel="stylesheet" href="css/main.css">
-    <title>Final Project</title>
+
+    <title>Three Star Media</title>
 </head>
 
 <body>
-    <div class="container1">
+    <div class="header">
         <header>
             <nav>
                 <div class="nav-div">
@@ -44,7 +55,7 @@
                             <a href="#contact">Contact</a>
                         </li>
 
-                        <li>
+                        <li class="searchbar">
                             <input type="text" placeholder="Search" name="Search">
                             <button type="submit" class="searchbutton"><i class="fa fa-search"></i></button>
                         </li>
@@ -52,7 +63,7 @@
                 </div>
             </nav>
 
-            <div class="banner">
+            <div class="wrapper banner">
                 <img src="images/main-banner.jpg" alt="office">
                 <div class="banner-div">
                     <h1>Welcome to Three Star Media</h1>
@@ -68,11 +79,12 @@
     </div>
 
     <div class="main">
-        <div class="container2" id="about">
+        <div class="wrapper about" id="about">
             <div class="about-div">
-                <div class="box-container">
+                <div class="about-image">
                     <img src="images/about-us.jpg" alt="ping pong table">
-
+                </div>
+                <div class="about-text">
                     <h2>About Us</h2>
 
                     <p>
@@ -90,8 +102,12 @@
             </div>
         </div>
 
-        <div class="container3" id="services">
-            <div class="card">
+        <div class="our-services" id="services">
+            <div class="services">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="card digital">
                 <img src="images/digital.jpg" alt="Person in front of phone and computer">
                 <div class="card-container">
                     <h3>Digital Transformation</h3>
@@ -107,72 +123,72 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card marketing">
                 <img src="images/marketing.jpg" alt="Computer in desk showing graphs">
                 <div class="card-container">
                     <h3>Marketing</h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
-                            veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
-                            dolorem eum saepe obcaecati deserunt!
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
+                        veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
+                        dolorem eum saepe obcaecati deserunt!
+                    </p>
 
-                        <button class="card-button">Marketing Plan <i class="fa fa-caret-right"></i> <a href="#"></a>
-                        </button>
+                    <button class="card-button">Marketing Plan <i class="fa fa-caret-right"></i> <a href="#"></a>
+                    </button>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card video">
                 <img src="images/video.jpg" alt="Person holding an smartphone with the youtube app">
                 <div class="card-container">
                     <h3>Video Production</h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
-                            veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
-                            dolorem eum saepe obcaecati deserunt!
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
+                        veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
+                        dolorem eum saepe obcaecati deserunt!
+                    </p>
 
-                        <button class="card-button">Video Plans <i class="fa fa-caret-right"></i> <a href="#"></a>
-                        </button>
+                    <button class="card-button">Video Plans <i class="fa fa-caret-right"></i> <a href="#"></a>
+                    </button>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card web">
                 <img src="images/web.jpg" alt="Notebook, smartphone and pen over table">
                 <div class="card-container">
                     <h3>Web Development</h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
-                            veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
-                            dolorem eum saepe obcaecati deserunt!
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
+                        veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
+                        dolorem eum saepe obcaecati deserunt!
+                    </p>
 
-                        <button class="card-button">Web Plans<i class="fa fa-caret-right"></i> <a href="#"></a>
-                        </button>
+                    <button class="card-button">Web Plans<i class="fa fa-caret-right"></i> <a href="#"></a>
+                    </button>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card print">
                 <img src="images/print.jpg" alt="Newspaper dispensers on street">
                 <div class="card-container">
                     <h3>Print</h3>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
-                            veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
-                            dolorem eum saepe obcaecati deserunt!
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum laboriosam illo
+                        veritatis, nihil eum minus! Quas pariatur ad excepturi dolore esse ipsa, animi ratione
+                        dolorem eum saepe obcaecati deserunt!
+                    </p>
 
-                        <button class="card-button">Print Plans<i class="fa fa-caret-right"></i> <a href="#"></a>
-                        </button>
+                    <button class="card-button">Print Plans<i class="fa fa-caret-right"></i> <a href="#"></a>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div class="container4" id="vision">
+        <div class="wrapper vision" id="vision">
 
             <div class="vision-div">
                 <h4>Our Vision</h4>
@@ -190,12 +206,12 @@
 
         </div>
 
-        <div class="container5" id="team">
-            <div class="image-box">
+        <div class="team-div" id="team"> 
+            <div class="image-box-1">
                 <img src="images/john.jpg" alt="John smiling at camera">
             </div>
 
-            <div class="text-box">
+            <div class="text-box-1">
                 <h4>John Doe</h4>
 
                 <h5>CEO and Co-owner</h5>
@@ -208,7 +224,7 @@
             </div>
 
 
-            <div class="text-box">
+            <div class="text-box-2">
                 <h4>Bob Rite</h4>
 
                 <h5>CFO and Co-owner</h5>
@@ -221,18 +237,18 @@
             </div>
 
 
-            <div class="image-box">
+            <div class="image-box-2">
                 <img src="images/bob.jpg" alt="Bob smiling at camera">
             </div>
 
         </div>
 
-        <div class="container6" id="contact">
-            <div class="grid-box-1">
+        <div class="contact-container" id="contact">
+            <div class="contact-us">
                 <h2>Contact Us</h2>
             </div>
 
-            <div class="grid-box-2">
+            <div class="message">
                 <h3>Send us a message</h3>
 
                 <form method="post" id="contact-us">
@@ -257,7 +273,7 @@
                 </form>
             </div>
 
-            <div class="grid-box-3">
+            <div class="location">
                 <h2>Location</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676053!2d-75.75712548444633!3d45.3499277790998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231359587!5m2!1sen!2sca"
@@ -265,7 +281,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="grid-box-5">
+            <div class="operation">
                 <h2>Hours of operation</h2>
 
                 <table>
@@ -293,7 +309,7 @@
         </div>
     </div>
 
-    <div class="container-6">
+    <div class="wrapper footer">
         <footer>
             <div class="footer-div">
 
