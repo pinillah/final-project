@@ -10,11 +10,17 @@ h1 {
     color: #ffffff;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: auto;
     display: block;
 }
+
 
 /* Navigation */
 
@@ -101,7 +107,7 @@ i.fa.fa-search {
 
 .banner-div {
     background-color: rgba(34, 34, 34, 0.664);
-    padding: 10% 15px;
+    padding: 7% 15px;
 }
 
 .banner-div h1 {
@@ -112,14 +118,21 @@ line-height: 135%;
 .banner-div p {
     color: #ffffff;
     line-height: 25px;
+    margin-bottom: 30px;
 }
 
 a.bannerbutton {
     padding: 30px;
     background-color: #c78c06;
-
+    font-size: 1.2rem;
+    color: #222;
+    text-decoration: none;
 }
 
+i.fa.fa-caret-right {
+    font-size: 2rem;
+    margin: 5px;
+}
 
 /* main */
 .main {
@@ -128,6 +141,69 @@ a.bannerbutton {
     display: block;
 }
 
+/* about */
+.wrapper.about {
+    background-color: #ffe6ac;
+    padding: 20px 15px;
+}
+
+.about-image img {
+    max-width: 100%;
+}
+
+.about-text h2 {
+    margin: 25px 0px;
+}
+
+.about-text p {
+    font-size: 0.8rem;
+    line-height: 135%;
+}
+
+.our-services h2 {
+    width: auto;
+    margin: 25px 0px 15px 15px  
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: 10px 15px;
+    display: block;
+}
+
+.card img {
+    width: 100%;
+    
+}
+
+.card h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 30px 15px;
+}
+
+.card p {
+    font-size: 0.8rem;
+    line-height: 135%;
+    margin: 15px 15px;
+}
+
+.card-button {
+    margin: 0 15px 15px 15px;
+    padding: 23px;
+    background-color: #222;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    align-items: center;
+}
+
+.card-button i.fa.fa-caret-right {
+    font-size: 1.3rem;
+    margin: 5px;
+}
 
 @media screen and (min-width: 760px) {
     /* flex grid, at the end only one media query */
