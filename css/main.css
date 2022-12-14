@@ -98,9 +98,7 @@ i.fa.fa-search {
     display: flex;
     align-items: center;
     background-image: url("/images/main-banner.jpg");
-    background-color: #ffffff;
     background-repeat: no-repeat;
-    background-size: 900px;
     background-position: bottom;
     background-size:cover;
 }
@@ -173,7 +171,6 @@ i.fa.fa-caret-right {
 
 .card img {
     width: 100%;
-    
 }
 
 .card h3 {
@@ -204,6 +201,94 @@ i.fa.fa-caret-right {
     font-size: 1.3rem;
     margin: 5px;
 }
+
+/* our vision */
+.wrapper.vision {
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    padding: 20px 0;
+    background-image: url("/images/vision.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.vision-div h4 {
+    color:#ffffff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 15px 15px;
+}
+
+.vision-div p {
+    color:#ffffff;
+    font-size: 0.8rem;
+    line-height: 135%;
+    margin: 15px 15px;
+}
+
+.vision-button {
+    margin: 0px 15px;
+    padding: 20px;
+    background-color: #222;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #c78c06;
+}
+
+.vision-button i.fa.fa-caret-right {
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+/* Our Team */
+
+.team-div {
+    display: flex;
+    width: auto;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.our-team h2 {
+    margin: 15px 0px  
+}
+
+.text-box-1 {
+    background-color: #ffe6ac;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+}
+
+.team-div img{
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.team-div h4 {
+    color: #222;
+    font-size: 1.7rem;
+    line-height: 135%;
+    font-weight: 700;
+}
+
+.team-div h5 {
+    color: #222;
+    font-size: 0.9rem;
+    line-height: 135%;
+    font-weight: 700;
+}
+
+.text-box-2 {
+    background-color: #ffe6ac;
+    padding: 30px 15px;
+    order: 1;
+}
+
+
 
 @media screen and (min-width: 760px) {
     /* flex grid, at the end only one media query */
