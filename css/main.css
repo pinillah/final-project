@@ -97,7 +97,7 @@ i.fa.fa-search {
     margin: auto;
     display: flex;
     align-items: center;
-    background-image: url("/images/main-banner.jpg");
+    background-image: url("images/main-banner.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size:cover;
