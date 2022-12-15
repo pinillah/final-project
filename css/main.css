@@ -1,7 +1,7 @@
 /* defaults */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 h1 {
@@ -12,6 +12,11 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -69,12 +74,11 @@ li a:hover {
     height: 60px;
 }
 
-input[type=text] {
+.nav-div input[type=text] {
     border: 0px;
     width: 100%;
     height: 35px;
     display: block;
-    text-justify: center;
 }
 
 button.searchbutton {
@@ -97,7 +101,7 @@ i.fa.fa-search {
     margin: auto;
     display: flex;
     align-items: center;
-    background-image: url("images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size:cover;
@@ -132,7 +136,7 @@ i.fa.fa-caret-right {
     margin: 5px;
 }
 
-/* main */
+/* main - container with max-width and display styling */
 .main {
     max-width: 1200px;
     margin: auto;
@@ -254,8 +258,19 @@ i.fa.fa-caret-right {
 }
 
 .our-team h2 {
-    margin: 15px 0px  
+    margin: 15px 0px;
 }
+
+.text-box-1 p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.text-box-2 p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
 
 .text-box-1 {
     background-color: #ffe6ac;
@@ -280,6 +295,7 @@ i.fa.fa-caret-right {
     font-size: 0.9rem;
     line-height: 135%;
     font-weight: 700;
+    border-bottom: 2px #c78c06 solid;
 }
 
 .text-box-2 {
@@ -288,11 +304,101 @@ i.fa.fa-caret-right {
     order: 1;
 }
 
+/* Contact */
+
+
+.contact-us h2 {
+    margin: 25px 15px 10px 15px;  
+}
+
+.contact-div .message h3{
+    margin: 10px 15px 25px 15px;
+}
+
+
+form.message-form {
+    margin: 0 15px;
+}
+
+textarea {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.message input[type=text] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+.message input[type=button] {
+    background-color: #222;
+    color: #c78c06;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+/* Table - Hours of Operation*/
+
+.operation {
+    margin: 0 15px;
+}
+
+.operation h2 {
+    margin-bottom: 15px;
+}
+
+.operation-table {
+    width: 100%;
+    border: 1px solid #222;
+    margin-bottom: 30px;
+}
+
+th {
+    border: 1px solid;
+    padding: 20px;
+    background-color: #ffe6ac;
+}
+
+td {
+    width: auto;
+    padding: 30px 0px 30px 15px;
+    border: 1px solid;
+    text-align: left;
+}
+
+/* Location - Map */
+iframe {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.wrapper.footer {
+    background-color: #222;
+    padding: 20px;
+}
+
+.wrapper.footer p {
+    color: #c78c06;
+    padding: 20px 0;
+
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #c78c06;
 
 
 @media screen and (min-width: 760px) {
-    /* flex grid, at the end only one media query */
 
+    /* flex grid, at the end only one media query */
     .services {
         grid-area: heading;
     }

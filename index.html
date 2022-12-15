@@ -71,7 +71,7 @@
                         repellendus perferendis, ab, molestiae maxime dolore dignissimos esse excepturi nam quasi.
                         Possimus voluptatibus facilis unde voluptates illum fugit.
                     </p>
-                    <a href="#contact" class="bannerbutton">Connect with us <i class="fa fa-caret-right"></i></a> 
+                    <a href="#contact" class="bannerbutton">Connect with us <i class="fa fa-caret-right"></i></a>
                 </div>
             </div>
         </header>
@@ -181,7 +181,7 @@
                         dolorem eum saepe obcaecati deserunt!
                     </p>
 
-                    <button class="card-button">Print Plans<i class="fa fa-caret-right"></i> 
+                    <button class="card-button">Print Plans<i class="fa fa-caret-right"></i>
                     </button>
                 </div>
             </div>
@@ -205,11 +205,11 @@
 
         </div>
 
-        <div class="team-div" id="team"> 
+        <div class="team-div" id="team">
             <div class="our-team">
-                <h2>Our Team</h2> 
+                <h2>Our Team</h2>
             </div>
-            
+
             <div class="image-box-1">
                 <img src="images/john.jpg" alt="John smiling at camera">
             </div>
@@ -246,7 +246,7 @@
 
         </div>
 
-        <div class="contact-container" id="contact">
+        <div class="contact-div" id="contact">
             <div class="contact-us">
                 <h2>Contact Us</h2>
             </div>
@@ -254,40 +254,26 @@
             <div class="message">
                 <h3>Send us a message</h3>
 
-                <form method="post" id="contact-us">
-
-                    <label for="name">Full Name</label>
-                    <br>
-                    <input id="name" type="text" name="name">
-                    <br>
-
+                <form class="message-form" action="post" method="post">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
                     <label for="email">Email</label>
-                    <br>
-                    <input id="email" type="email" name="email">
-                    <br>
-
+                    <input type="text" name="email" id="email" required>
+                    
                     <label for="message">Message</label>
-                    <br>
+
                     <textarea name="message" id="message"></textarea>
-                    <br>
 
-                    <input type="submit" id="submit" value="Send">
-
+                    <input type="button" value="Send">
                 </form>
             </div>
 
-            <div class="location">
-                <h2>Location</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676053!2d-75.75712548444633!3d45.3499277790998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231359587!5m2!1sen!2sca"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
 
             <div class="operation">
                 <h2>Hours of operation</h2>
-
-                <table>
+    
+                <table class="operation-table">
                     <thead>
                         <tr>
                             <th><span>Days</span></th>
@@ -298,18 +284,35 @@
                         <tr>
                             <td>Monday-Friday</td>
                             <td>9 AM - 6 PM</td>
-
+    
                         </tr>
-
+    
                         <tr>
                             <td>Saturday-Sunday</td>
                             <td>Closed</td>
                         </tr>
                     </tbody>
                 </table>
+    
+            <div class="location">
+                <h2>Location</h2>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676053!2d-75.75712548444633!3d45.3499277790998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231359587!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+    
+
 
         </div>
+
+     
+
+        </div>
+
+       
+
+
     </div>
 
     <div class="wrapper footer">
